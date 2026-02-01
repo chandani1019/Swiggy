@@ -8,8 +8,8 @@
      <style>
      body{
          font-family:Arial;
-         background-color:orangered;
-         background-image: url('a2.jpg');
+         background-color:#ff5200;
+         
          background-size:cover;
          background-repeat:no-repeat;
          background-position:center;

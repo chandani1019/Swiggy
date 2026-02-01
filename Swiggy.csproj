@@ -72,7 +72,10 @@
     <Content Include="App_Data\DB_swiggy_log.ldf">
       <DependentUpon>DB_swiggy.mdf</DependentUpon>
     </Content>
+    <Content Include="home.aspx" />
+    <Content Include="homepage.html" />
     <Content Include="login.aspx" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +85,13 @@
     </Compile>
     <Compile Include="account.aspx.designer.cs">
       <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

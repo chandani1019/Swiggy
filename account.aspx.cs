@@ -11,6 +11,7 @@ namespace Swiggy
 {
     public partial class account : System.Web.UI.Page
     {
+        string strcon = ConfigurationManager.ConnectionStrings["dbconnect"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,9 +19,9 @@ namespace Swiggy
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string cs = ConfigurationManager.ConnectionStrings["dbconnect"].ConnectionString;
 
-            using (SqlConnection con = new SqlConnection(cs))
+
+               SqlConnection con = new SqlConnection(strcon);
             {
                 string query = "INSERT INTO account VALUES (@p,@n,@e)";
 
